@@ -117,9 +117,10 @@ if (targetcgpa >= 1 && targetcgpa <= 10) {
   
   document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + '<p>To achieve a CGPA of '+ targetcgpa +' , you need to target a total of '+ totalMarks +' marks in 6 subjects.</p> <p>To achieve this, you need to target '+ marksPerSubject +  '  marks per subject.</p>';
   if (cpga >= 1 && cpga < 4) {
-    // Suggest marks for CGPA between 1 and 4
-  } else if (cpga >= 4 && cpga < 7) {
-    // Suggest marks for CGPA between 4 and 7
+  document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + "<p>Work on basics.</p><h4>here are some suggested course for you</h4>";
+  } 
+    if (cpga >= 4 && cpga < 7) {
+  document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + "<p>With somemore effects you do better.</p><h4>here are some suggested course for you</h4>";
     
   } 
   if (cgpa > 7) {
